@@ -1,0 +1,153 @@
+.homeWrapper {
+  position: relative;
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100vh;
+  padding: 0 16px;
+  text-align: center;
+
+  @include breakpoint(laptop) {
+    max-width: 1140px;
+  }
+
+  .homeLogo {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    font-size: 13vw;
+    line-height: 13vw;
+    font-family: Respira, sans-serif;
+    color: $ice;
+    padding: 0 14px;
+    z-index: 0;
+
+    span {
+      font-size: 2vw;
+      line-height: 0;
+      @include breakpoint(mobile) {
+        font-size: 22px;
+      }
+    }
+
+    @include breakpoint(mobile) {
+      font-size: 96px;
+      line-height: 96px;
+    }
+  }
+}
+
+.homeGrid {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-gap: 4px;
+  height: 85vh;
+
+  @include breakpoint(mobile) {
+    height: 80vh;
+  }
+
+  :nth-child(1n) {
+    margin-top: 10vh;
+    grid-column: 1 / span 4;
+    height: 55vh;
+    background: #434343;
+  }
+  :nth-child(2n) {
+    margin-top: 0;
+    grid-column: 8 / span 6;
+    height: 35vh;
+    background: #c68b90;
+  }
+  :nth-child(3n) {
+    margin-top: 26.5vh;
+    grid-column: 15/19;
+    height: 48vh;
+    background: #57423c;
+  }
+  :nth-child(4n) {
+    margin-top: -25vh;
+    grid-column: 6 / span 6;
+    height: 35vh;
+    background: #374158;
+  }
+
+  @include breakpoint(mobile) {
+    grid-gap: 4px;
+
+    :nth-child(1n) {
+      margin-top: 0;
+      grid-column: 2 / span 8;
+      height: 30vh;
+      background: #69888bb9;
+    }
+    :nth-child(2n) {
+      margin-top: 8vh;
+      grid-column: 12 / span 7;
+      height: 35vh;
+      background: #c68b90;
+    }
+    :nth-child(3n) {
+      margin-top: 2vh;
+      grid-column: 1 / span 7;
+      height: 30vh;
+      background: #57423c;
+    }
+    :nth-child(4n) {
+      margin-top: 11vh;
+      grid-column: 11 / span 7;
+      height: 26vh;
+      background: #374158;
+    }
+  }
+
+  .block {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: $ice;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    mix-blend-mode: lighten;
+
+    &:hover {
+      background: $ice;
+      color: black;
+      mix-blend-mode: normal;
+    }
+
+    @include breakpoint(mobile) {
+      font-size: 9px;
+    }
+  }
+}
+
+.socialLinks {
+  position: fixed;
+  bottom: 15px;
+  left: 16px;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+    color: $ice;
+    font-size: 11px;
+    font-weight: 200;
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

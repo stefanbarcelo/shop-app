@@ -1,0 +1,44 @@
+nav {
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.innerNav {
+  max-width: 1640px;
+  padding: 10px 16px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  .logo {
+    display: block;
+    height: auto;
+    width: auto;
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .menuBtnCon {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+
+    .menu {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      width: 40px;
+      height: 100%;
+      float: right;
+      color: $ice;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}
