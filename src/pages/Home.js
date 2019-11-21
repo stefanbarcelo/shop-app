@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
           <div className="block">web</div>
           <div className="block">shop</div>
           <div className="block">contact</div>
-          <div className="block">graphics</div>
+          <Link to="/Graphics" className="block">
+            graphics
+          </Link>
         </div>
         <div className="socialLinks">
           <a href="www.google.com">Instagram</a>
