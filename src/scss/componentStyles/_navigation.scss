@@ -14,11 +14,14 @@ nav {
   align-items: center;
 
   .logo {
+    text-decoration: none;
+
     h4 {
-      font-size: 14px;
-      font-family: 'Helveitca', sans-serif, sans-serif;
-      font-weight: 300;
+      font-size: 18px;
+      font-family: "Founders Grotesk", sans-serif;
+      font-weight: 200;
       text-transform: capitalize;
+      text-decoration: none;
       color: $ice;
     }
   }

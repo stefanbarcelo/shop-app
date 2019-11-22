@@ -1,5 +1,13 @@
 @font-face {
-    font-family: 'respira-black';
+    font-family: 'Respira', sans-serif;
+    src: url('../../assets/fonts/respira-black-webfont.woff') format('woff2'),
+         url('../../assets/fonts/respira-black-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk', sans-serif;
     src: url('../../assets/fonts/respira-black-webfont.woff') format('woff2'),
          url('../../assets/fonts/respira-black-webfont.woff2') format('woff2');
     font-weight: normal;

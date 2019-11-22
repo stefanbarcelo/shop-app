@@ -5,11 +5,9 @@ export default function Nav() {
   return (
     <nav>
       <div className="innerNav">
-        <div className="logo">
-          <Link to="/">
-            <h4>stefan barcelo™</h4>
-          </Link>
-        </div>
+        <Link className="logo" to="/">
+          <h4>stefan barcelo™</h4>
+        </Link>
         <div className="menuBtnCon">
           <div className="menu">
             <p>menu</p>

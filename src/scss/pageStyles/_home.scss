@@ -30,7 +30,7 @@
       box-sizing: border-box;
       font-size: 13vw;
       line-height: 13vw;
-      font-family: Respira, sans-serif;
+      font-family: "Respira", sans-serif;
       color: $ice;
       padding: 0 14px;
       z-index: 0;
@@ -65,7 +65,7 @@
     :nth-child(2n) {
       margin-top: 0;
       grid-column: 8 / span 6;
-      height: 35vh;
+      height: 32vh;
       background: #c68b90;
     }
     :nth-child(3n) {
@@ -141,18 +141,36 @@
     position: fixed;
     bottom: 15px;
     left: 16px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
 
     a {
-      display: inline-block;
+      position: relative;
+      display: block;
       text-decoration: none;
-      margin-right: 15px;
-      color: $ice;
-      font-size: 11px;
+      color: white;
+      font-size: 14px;
       font-weight: 200;
-      opacity: 0.4;
+      opacity: 0.6;
+      text-align: left;
+
+      &:before {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        background: white;
+        width: 100%;
+      }
 
       &:hover {
         opacity: 1;
+
+        &:before {
+          display: block;
+        }
       }
     }
   }
