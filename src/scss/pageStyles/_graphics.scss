@@ -1,17 +1,17 @@
 .colorContainer {
-    position: relative;
-    width: 100vh;
-    height: 100vh;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
- .color {
-        margin: 0 auto;
-        display: block;
-        width: 50vh;
-        height: 50vh;
-        background: $dirtyRose;
-    }
+.color {
+  margin: 0 auto;
+  display: block;
+  width: 50vh;
+  height: 50vh;
+  background: $dirtyRose;
+}

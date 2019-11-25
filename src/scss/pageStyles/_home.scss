@@ -13,7 +13,7 @@
     margin: 0 auto;
     max-width: 1440px;
     height: 100%;
-    padding: 0 16px;
+    padding: 0 4em;
     text-align: center;
 
     @include breakpoint(laptop) {
@@ -60,24 +60,49 @@
     grid-gap: 4px;
     height: 70vh;
 
+    .homeBlock {
+      position: relative;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      text-decoration: none;
+      font-family: "TitlingGothicFB Extended", sans-serif;
+      font-size: 8px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: $ice;
+      transition: all 0.3s ease-in-out;
+      mix-blend-mode: lighten;
+
+      &:hover {
+        cursor: pointer;
+        background: $ice;
+        color: black;
+        mix-blend-mode: normal;
+      }
+    }
+
     :nth-child(1n) {
       margin-top: 12vh;
       grid-column: 1 / span 4;
       height: 40vh;
       background: #6a8a8db9;
     }
+
     :nth-child(2n) {
       margin-top: 0;
       grid-column: 8 / span 6;
       height: 32vh;
-      background: #c68b90;
+      background: $dirtyRose;
     }
+
     :nth-child(3n) {
       margin-top: 22vh;
       grid-column: 15/19;
       height: 40vh;
       background: #57423c;
     }
+
     :nth-child(4n) {
       margin-top: -22vh;
       grid-column: 6 / span 6;
@@ -117,28 +142,6 @@
         background: #374158;
       }
     }
-
-    .block {
-      position: relative;
-      display: grid;
-      align-items: center;
-      justify-items: center;
-      text-decoration: none;
-      font-family: "TitlingGothicFB Extended", sans-serif;
-      font-size: 8px;
-      text-transform: uppercase;
-      font-weight: 400;
-      color: $ice;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
-      mix-blend-mode: lighten;
-
-      &:hover {
-        background: $ice;
-        color: black;
-        mix-blend-mode: normal;
-      }
-    }
   }
 
   .socialLinks {
@@ -153,17 +156,11 @@
 
     a {
       position: relative;
-<<<<<<< HEAD
-      display: block;
-      text-decoration: none;
-      color: white;
-=======
       font-family: "Founders Grotesk", sans-serif;
       display: inline-block;
       text-decoration: none;
       margin-right: 15px;
       color: $ice;
->>>>>>> 43241eaa0273d408e0560806fa4a5ad186706afa
       font-size: 14px;
       font-weight: 200;
       opacity: 0.6;
@@ -193,9 +190,6 @@
         opacity: 1;
 
         &:before {
-<<<<<<< HEAD
-          display: block;
-=======
           position: absolute;
           bottom: 0;
           content: "";
@@ -203,7 +197,6 @@
           height: 1px;
           background: white;
           opacity: .6;
->>>>>>> 43241eaa0273d408e0560806fa4a5ad186706afa
         }
       }
     }
