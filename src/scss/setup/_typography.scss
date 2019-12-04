@@ -1,20 +1,22 @@
+@import url("https://use.typekit.net/zxo1cwd.css");
+
 @font-face {
-    font-family: 'Respira', sans-serif;
-    src: url('../../assets/fonts/respira-black-webfont.woff') format('woff2'),
-         url('../../assets/fonts/respira-black-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Respira-Black';
+  src: url('../assets/fonts/Respira-Black.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Founders Grotesk', sans-serif;
-    src: url('../../assets/fonts/respira-black-webfont.woff') format('woff2'),
-         url('../../assets/fonts/respira-black-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Respira-Black';
+  src:  url('../assets/fonts/Respira-Black.otf')  format('opentype'), 
+  url('../assets/fonts/Respira-Black.ttf')  format('truetype'), 
+  url('../assets/fonts/Respira-Black.svg#Respira-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 h1 {
-    font-family: 'respira-black';
+  font-family: 'Respira-Black', sans-serif;
+  font-weight: 700;
 }

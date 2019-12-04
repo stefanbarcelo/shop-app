@@ -23,42 +23,13 @@
     @include breakpoint(mobile) {
       padding: 0;
     }
-
-    .homeLogo {
-      display: block;
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      box-sizing: border-box;
-      font-size: 13vw;
-      line-height: 13vw;
-      font-family: "Respira", sans-serif;
-      color: $ice;
-      padding: 0 14px;
-      z-index: 0;
-
-      span {
-        font-size: 2vw;
-        line-height: 0;
-        @include breakpoint(mobile) {
-          font-size: 22px;
-        }
-      }
-
-      @include breakpoint(mobile) {
-        font-size: 96px;
-        line-height: 96px;
-      }
-    }
   }
 
   .homeGrid {
     display: grid;
     grid-template-columns: repeat(18, 1fr);
     grid-gap: 4px;
-    height: 70vh;
+    height: 75vh;
 
     .homeBlock {
       position: relative;
@@ -66,19 +37,21 @@
       align-items: center;
       justify-items: center;
       text-decoration: none;
-      font-family: "TitlingGothicFB Extended", sans-serif;
+      font-family: $titling;
       font-size: 8px;
       text-transform: uppercase;
       font-weight: 400;
       color: $ice;
       transition: all 0.3s ease-in-out;
       mix-blend-mode: lighten;
+      transform: translateY(0);
 
       &:hover {
         cursor: pointer;
         background: $ice;
         color: black;
         mix-blend-mode: normal;
+        transform: translateY(-6px);
       }
     }
 
@@ -97,7 +70,7 @@
     }
 
     :nth-child(3n) {
-      margin-top: 22vh;
+      margin-top: 20vh;
       grid-column: 15/19;
       height: 40vh;
       background: #57423c;
@@ -111,34 +84,34 @@
     }
 
     @include breakpoint(mobile) {
-      height: 75vh;
+      height: 65vh;
       grid-gap: 4px;
 
       :nth-child(1n) {
         margin-top: 0;
-        grid-column: 2 / span 9;
-        height: 27vh;
+        grid-column: 2 / span 8;
+        height: 25vh;
         background: #6a8a8db9;
       }
 
       :nth-child(2n) {
-        margin-top: 8vh;
-        grid-column: 12 / span 7;
-        height: 30vh;
+        margin-top: 4vh;
+        grid-column: 11 / span 8;
+        height: 28vh;
         background: #c68b90;
       }
 
       :nth-child(3n) {
-        margin-top: -2vh;
+        margin-top: 0;
         grid-column: 1 / span 8;
-        height: 30vh;
+        height: 28vh;
         background: #57423c;
       }
 
       :nth-child(4n) {
-        margin-top: 11vh;
+        margin-top: 6vh;
         grid-column: 10 / span 8;
-        height: 26vh;
+        height: 28vh;
         background: #374158;
       }
     }
@@ -156,25 +129,14 @@
 
     a {
       position: relative;
-      font-family: "Founders Grotesk", sans-serif;
+      font-family: $haylard;
       display: inline-block;
       text-decoration: none;
-      margin-right: 15px;
       color: $ice;
       font-size: 14px;
-      font-weight: 200;
+      font-weight: 300;
       opacity: 0.6;
       text-align: left;
-
-      &:before {
-        display: none;
-        position: absolute;
-        bottom: 0;
-        content: "";
-        height: 1px;
-        background: white;
-        width: 100%;
-      }
 
       &:before {
         position: absolute;
@@ -196,9 +158,59 @@
           width: 100%;
           height: 1px;
           background: white;
-          opacity: .6;
+          opacity: .4;
         }
       }
     }
+  }
+}
+
+.homeLogo {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-size: 13vw;
+  line-height: 13vw;
+  font-family: 'Respira-Black';
+  color: $ice;
+  padding: 0 14px;
+  z-index: 0;
+
+  span {
+    font-size: 2vw;
+    line-height: 0;
+    @include breakpoint(mobile) {
+      font-size: 22px;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 96px;
+    line-height: 96px;
+  }
+}
+
+.home-header {
+  text-align: left;
+  width: 50%;
+  min-width: 700px;
+
+  h4 {
+     font-size: 11px;
+     font-family: $titling;
+     font-weight: 500;
+     text-transform: uppercase;
+     margin-bottom: 15px;
+     opacity: .4;
+  }
+
+  h2 {
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 500;
   }
 }

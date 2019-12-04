@@ -1,0 +1,34 @@
+// * { background-color: rgba(255,0,0,.2); }
+// * * { background-color: rgba(0,255,0,.2); }
+// * * * { background-color: rgba(0,0,255,.2); }
+// * * * * { background-color: rgba(255,0,255,.2); }
+// * * * * * { background-color: rgba(0,255,255,.2); }
+// * * * * * * { background-color: rgba(255,255,0,.2); }
+// * * * * * * * { background-color: rgba(255,0,0,.2); }
+// * * * * * * * * { background-color: rgba(0,255,0,.2); }
+// * * * * * * * * * { background-color: rgba(0,0,255,.2); }
+
+@import url("https://use.typekit.net/zxo1cwd.css");
+
+@font-face {
+    font-family: 'Respira-Black', sans-serif;
+    src: url('../assets/fonts/Respira-Black.otf'), format('otf');
+}
+
+
+h1 {
+    font-family: 'Respira-Black', sans-serif;
+}
+
+// SETUP
+@import "./setup/globalReset";
+@import "./setup/variables.scss";
+@import "./setup/mixins.scss";
+@import "./setup/typography.scss";
+
+// COMPONENTS
+@import "./componentStyles/navigation";
+
+// PAGES
+@import "./pageStyles/home";
+@import "./pageStyles/graphics";
