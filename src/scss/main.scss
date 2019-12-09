@@ -7,6 +7,8 @@
 // * * * * * * * { background-color: rgba(255,0,0,.2); }
 // * * * * * * * * { background-color: rgba(0,255,0,.2); }
 // * * * * * * * * * { background-color: rgba(0,0,255,.2); }
+// * * * * * * * * * * { background-color: rgba(0,0,255,.2); }
+// * ** * * * * * * * * { background-color: rgba(0,0,255,.2); }
 
 @import url("https://use.typekit.net/zxo1cwd.css");
 
@@ -28,6 +30,8 @@ h1 {
 
 // COMPONENTS
 @import "./componentStyles/navigation";
+@import "./componentStyles/nameBanner";
+@import "./componentStyles/projectBlock";
 
 // PAGES
 @import "./pageStyles/home";

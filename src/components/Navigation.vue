@@ -18,6 +18,5 @@ export default {
   name: "Navigation",
 };
 </script>
-
 <style src="../scss/main.scss" lang="scss">
 </style>

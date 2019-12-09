@@ -1,23 +1,65 @@
 <template>
-	<div class="home">
-		<div class="homeWrapper">
-			<div class="home-header">
-				<h4>Hello, I'm stefan barcelo</h4>
-				<h2>a UI/UX Designer and Junior Front-end Developer who’s seeks to always challenge himself and deliver only the best for his clients.</h2>
-			</div>
-		</div>
-	</div>
+  <div class="home">
+    <div class="wrapper">
+      <HomeHeader />
+      <NameBanner />
+      <GeminiBanner />
+      <div class="homeGrid">
+        <projectBlock
+          class="projectBlock1"
+          projName="gaggan"
+          projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+			tempor  incididunt ut labore  et dolore magna aliqua. "
+        />
+		<projectBlock
+          class="projectBlock2"
+          projName="gaggan"
+          projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+			tempor  incididunt ut labore  et dolore magna aliqua. "
+        />
+		<projectBlock
+          class="projectBlock3"
+          projName="gaggan"
+          projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+			tempor  incididunt ut labore  et dolore magna aliqua. "
+        />
+		<projectBlock
+          class="projectBlock4"
+          projName="gaggan"
+          projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+			tempor  incididunt ut labore  et dolore magna aliqua. "
+        />
+        <projectBlock
+          class="projectBlock5"
+          projName="gaggan"
+          projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+			tempor  incididunt ut labore  et dolore magna aliqua. "
+        />
+      </div>
+      <GeminiBanner />
+    </div>
+  </div>
 </template>
 
 <script>
+import HomeHeader from "../components/homeHeader";
+import NameBanner from "../components/nameBanner";
+import GeminiBanner from "../components/geminiBanner";
+import projectBlock from "../components/projectBlock";
+
 export default {
-	name: "home",
-	data() {
-		return {};
-	},
-	methods: {}
+  name: "home",
+  data() {
+    return {};
+  },
+  methods: {},
+  components: {
+    HomeHeader,
+    NameBanner,
+    GeminiBanner,
+    projectBlock
+  }
 };
 </script>
 
-<style src="../scss/main.scss" lang="scss">
-</style>
+<style src="../scss/main.scss" lang="scss"></style>

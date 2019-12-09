@@ -6,211 +6,169 @@
   bottom: 0;
   height: 100%;
 
-  .homeWrapper {
+  .homeHeader {
     position: relative;
     display: grid;
     align-items: center;
-    margin: 0 auto;
-    max-width: 1440px;
-    height: 100%;
-    padding: 0 4em;
+    height: 100vh;
     text-align: center;
 
-    @include breakpoint(laptop) {
-      max-width: 1040px;
+    .headerText {
+      text-align: left;
+      width: 40%;
+      z-index: 2;
+
+      h4 {
+        color: $dirtyRose;
+        font-size: 11px;
+        font-family: $titling;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        font-family: "founders grotesk", sans-serif;
+        font-size: 42px;
+        line-height: 1.3;
+        font-weight: 200;
+        color: $ice;
+        margin-bottom: 30px;
+      }
     }
 
-    @include breakpoint(mobile) {
-      padding: 0;
+    .skull {
+      position: absolute;
+      width: 75vh;
+      right: 2em;
+      bottom: 10vh;
+      z-index: 1;
+      mix-blend-mode: screen;
+      max-width: 700px;
+    }
+
+    .btn {
+      color: $ice;
+      font-weight: 300;
+      font-family: $titling;
+      transition: all 0.4s ease;
+      font-size: 14px;
+
+      .arrow {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 2px;
+        background: white;
+        margin-bottom: 4px;
+        margin-right: 15px;
+        z-index: -1;
+        transition: all 0.4s ease;
+
+        &:after,
+        &:before {
+          border-right: 2px solid $ice;
+          content: "";
+          display: block;
+          height: 8px;
+          margin-top: -6px;
+          position: absolute;
+          -moz-transform: rotate(135deg);
+          -o-transform: rotate(135deg);
+          -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+          top: 1px;
+          right: 1px;
+        }
+
+        &:before {
+          top: 5px;
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: $dirtyRose;
+
+        .arrow {
+          opacity: 0.2;
+          width: 60px;
+        }
+      }
     }
   }
 
   .homeGrid {
     display: grid;
-    grid-template-columns: repeat(18, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 4px;
-    height: 75vh;
+    margin-bottom: 80px;
 
-    .homeBlock {
-      position: relative;
-      display: grid;
-      align-items: center;
-      justify-items: center;
-      text-decoration: none;
-      font-family: $titling;
-      font-size: 8px;
-      text-transform: uppercase;
-      font-weight: 400;
-      color: $ice;
-      transition: all 0.3s ease-in-out;
-      mix-blend-mode: lighten;
-      transform: translateY(0);
-
-      &:hover {
-        cursor: pointer;
-        background: $ice;
-        color: black;
-        mix-blend-mode: normal;
-        transform: translateY(-6px);
-      }
-    }
-
-    :nth-child(1n) {
-      margin-top: 12vh;
-      grid-column: 1 / span 4;
-      height: 40vh;
-      background: #6a8a8db9;
-    }
-
-    :nth-child(2n) {
+    .projectBlock1 {
       margin-top: 0;
-      grid-column: 8 / span 6;
-      height: 32vh;
-      background: $dirtyRose;
-    }
+      grid-column: 1 / span 5;
 
-    :nth-child(3n) {
-      margin-top: 20vh;
-      grid-column: 15/19;
-      height: 40vh;
-      background: #57423c;
-    }
-
-    :nth-child(4n) {
-      margin-top: -22vh;
-      grid-column: 6 / span 6;
-      height: 29vh;
-      background: #374158;
-    }
-
-    @include breakpoint(mobile) {
-      height: 65vh;
-      grid-gap: 4px;
-
-      :nth-child(1n) {
-        margin-top: 0;
-        grid-column: 2 / span 8;
-        height: 25vh;
+      .box {
+        height: 60vh;
         background: #6a8a8db9;
       }
+    }
 
-      :nth-child(2n) {
-        margin-top: 4vh;
-        grid-column: 11 / span 8;
-        height: 28vh;
-        background: #c68b90;
+    .projectBlock2 {
+      margin-top: 6vh;
+      grid-column: 7 / span 6;
+      .box {
+        height: 45vh;
+        background: $dirtyRose;
       }
+    }
 
-      :nth-child(3n) {
-        margin-top: 0;
-        grid-column: 1 / span 8;
-        height: 28vh;
+    .projectBlock3 {
+      margin-top: 10vh;
+      grid-column: 3 / span 9;
+
+      .box {
+        height: 45vh;
         background: #57423c;
       }
+    }
 
-      :nth-child(4n) {
-        margin-top: 6vh;
-        grid-column: 10 / span 8;
-        height: 28vh;
+    .projectBlock4 {
+      margin-top: 20vh;
+      grid-column: 1 / span 7;
+
+      .box {
+        height: 45vh;
+        background: #374158;
+      }
+    }
+
+    .projectBlock5 {
+      margin-top: 10vh;
+      grid-column: 9 / span 4;
+
+      .box {
+        height: 60vh;
         background: #374158;
       }
     }
   }
-
-  .socialLinks {
-    display: grid;
-    grid-template-columns: auto auto;
-    position: fixed;
-    bottom: 15px;
-    left: 16px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 15px;
-
-    a {
-      position: relative;
-      font-family: $haylard;
-      display: inline-block;
-      text-decoration: none;
-      color: $ice;
-      font-size: 14px;
-      font-weight: 300;
-      opacity: 0.6;
-      text-align: left;
-
-      &:before {
-        position: absolute;
-        bottom: 0;
-        content: "";
-        width: 100%;
-        height: 1px;
-        background: white;
-        opacity: 0;
-      }
-
-      &:hover {
-        opacity: 1;
-
-        &:before {
-          position: absolute;
-          bottom: 0;
-          content: "";
-          width: 100%;
-          height: 1px;
-          background: white;
-          opacity: .4;
-        }
-      }
-    }
-  }
 }
 
-.homeLogo {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-  font-size: 13vw;
-  line-height: 13vw;
-  font-family: 'Respira-Black';
-  color: $ice;
-  padding: 0 14px;
-  z-index: 0;
+.geminiGrid {
+  display: grid;
+  grid-template-columns: auto 200px auto;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 80px;
 
-  span {
-    font-size: 2vw;
-    line-height: 0;
-    @include breakpoint(mobile) {
-      font-size: 22px;
-    }
-  }
-
-  @include breakpoint(mobile) {
-    font-size: 96px;
-    line-height: 96px;
-  }
-}
-
-.home-header {
-  text-align: left;
-  width: 50%;
-  min-width: 700px;
-
-  h4 {
-     font-size: 11px;
-     font-family: $titling;
-     font-weight: 500;
-     text-transform: uppercase;
-     margin-bottom: 15px;
-     opacity: .4;
-  }
-
-  h2 {
-    font-size: 44px;
-    line-height: 56px;
-    font-weight: 500;
+  .line {
+    height: 2px;
+    width: 100%;
+    background: $ice;
   }
 }
