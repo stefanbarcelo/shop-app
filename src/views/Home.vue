@@ -2,7 +2,7 @@
   <div class="home">
     <div class="wrapper">
       <HomeHeader />
-      <NameBanner />
+      <!-- <NameBanner /> -->
       <GeminiBanner />
       <div class="homeGrid">
         <projectBlock
@@ -11,41 +11,44 @@
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "
         />
-		<projectBlock
+        <projectBlock
           class="projectBlock2"
-          projName="gaggan"
+          projName="nordstrom"
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "
         />
-		<projectBlock
+        <projectBlock
           class="projectBlock3"
-          projName="gaggan"
+          projName="Trueframe"
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "
         />
-		<projectBlock
+
+        <projectBlock
           class="projectBlock4"
-          projName="gaggan"
+          projName="gallery"
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "
         />
         <projectBlock
           class="projectBlock5"
-          projName="gaggan"
+          projName="contact"
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "
         />
       </div>
       <GeminiBanner />
+      <ContactSection />
     </div>
   </div>
 </template>
 
 <script>
 import HomeHeader from "../components/homeHeader";
-import NameBanner from "../components/nameBanner";
+// import NameBanner from "../components/nameBanner";
 import GeminiBanner from "../components/geminiBanner";
 import projectBlock from "../components/projectBlock";
+import ContactSection from "../components/contactSection";
 
 export default {
   name: "home",
@@ -55,9 +58,10 @@ export default {
   methods: {},
   components: {
     HomeHeader,
-    NameBanner,
+    // NameBanner,
     GeminiBanner,
-    projectBlock
+    projectBlock,
+    ContactSection
   }
 };
 </script>

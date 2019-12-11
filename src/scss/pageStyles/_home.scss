@@ -5,6 +5,7 @@
   right: 0;
   bottom: 0;
   height: 100%;
+  overflow-x: hidden;
 
   .homeHeader {
     position: relative;
@@ -15,7 +16,7 @@
 
     .headerText {
       text-align: left;
-      width: 40%;
+      width: 45%;
       z-index: 2;
 
       h4 {
@@ -28,23 +29,61 @@
       }
 
       h2 {
-        font-family: "founders grotesk", sans-serif;
-        font-size: 42px;
+        font-family: $haylard;
+        font-size: 3.2vw;
         line-height: 1.3;
         font-weight: 200;
         color: $ice;
         margin-bottom: 30px;
       }
+
+      @include breakpoint(tablet) {
+        width: 100%;
+
+        h2 {
+          font-size: 6vw;
+        }
+
+        h4 {
+          font-size: 1.8vw;
+          margin-bottom: 15px;
+        }
+      }
+
+      @include breakpoint(mobile) {
+        width: 100%;
+
+        h2 {
+          font-size: 32px;
+        }
+
+        h4 {
+          font-size: 10px;
+          margin-bottom: 2vh;
+        }
+      }
     }
 
     .skull {
       position: absolute;
-      width: 75vh;
+      height: 105vh;
       right: 2em;
       bottom: 10vh;
       z-index: 1;
       mix-blend-mode: screen;
-      max-width: 700px;
+
+      @include breakpoint(tablet) {
+        opacity: 0.5;
+        height: 90vh;
+        right: -1vw;
+        z-index: 1;
+        bottom: 5vh;
+      }
+
+      @include breakpoint(mobile) {
+        height: 92vh;
+        right: -50vw;
+      }
     }
 
     .btn {
@@ -106,55 +145,9 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 4px;
-    margin-bottom: 80px;
 
-    .projectBlock1 {
-      margin-top: 0;
-      grid-column: 1 / span 5;
-
-      .box {
-        height: 60vh;
-        background: #6a8a8db9;
-      }
-    }
-
-    .projectBlock2 {
-      margin-top: 6vh;
-      grid-column: 7 / span 6;
-      .box {
-        height: 45vh;
-        background: $dirtyRose;
-      }
-    }
-
-    .projectBlock3 {
-      margin-top: 10vh;
-      grid-column: 3 / span 9;
-
-      .box {
-        height: 45vh;
-        background: #57423c;
-      }
-    }
-
-    .projectBlock4 {
-      margin-top: 20vh;
-      grid-column: 1 / span 7;
-
-      .box {
-        height: 45vh;
-        background: #374158;
-      }
-    }
-
-    .projectBlock5 {
-      margin-top: 10vh;
-      grid-column: 9 / span 4;
-
-      .box {
-        height: 60vh;
-        background: #374158;
-      }
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
     }
   }
 }
@@ -164,11 +157,41 @@
   grid-template-columns: auto 200px auto;
   align-items: center;
   justify-items: center;
-  margin-bottom: 80px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: auto 100px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    svg {
+      width: 70px;
+    }
+  }
 
   .line {
     height: 2px;
     width: 100%;
     background: $ice;
+  }
+
+  svg {
+    width: 120px;
+  }
+
+  @include breakpoint(tablet) {
+    grid-template-columns: auto 15vw auto;
+    margin-bottom: 50px;
+    svg {
+      width: 10vw;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    grid-template-columns: auto 100px auto;
+    margin-bottom: 50px;
+    svg {
+      width: 70px;
+    }
   }
 }

@@ -3,7 +3,7 @@
     <div class="geminiGrid">
       <div class="line"></div>
       <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120.038" viewBox="0 0 120 120.038">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120.038">
   <g id="Group_19" data-name="Group 19" transform="translate(-148.848 -133.062)">
     <g id="Group_15" data-name="Group 15" transform="translate(194.815 180.868)">
       <path id="Path_45" data-name="Path 45" d="M373.419,335.957c0,.073,0,.145,0,.22h0v0Zm-9.9,19.71q.467-.463.908-.952C364.134,355.04,363.829,355.359,363.52,355.667Zm-19.464,9.9h-.117l.117,0h.115C344.133,365.568,344.093,365.568,344.056,365.566Z" transform="translate(-343.939 -335.957)" fill="#c68b90"/>

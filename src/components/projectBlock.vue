@@ -10,18 +10,18 @@
         </div>
         <div class="details">
           <div class="content">
-            <marquee behavior="scroll" direction="right" scrollamount="12">
+            <marquee behavior="scroll" direction="right" scrollamount="25">
               <h2>
-                {{ projName }} &emsp;
-                {{projName }} &emsp;
-                {{ projName }} &emsp;
-                {{ projName }} &emsp;
-                {{projName}} &emsp;
-                {{ projName }} &emsp;
-                {{ projName }} &emsp;
-                {{projName}}  &emsp;
-                {{ projName }} &emsp;
-                {{ projName }} &emsp;
+                {{ projName }} <span>†††</span>
+                {{projName }} <span>†††</span>
+                {{ projName }} <span>†††</span>
+                {{ projName }} <span>†††</span>
+                {{projName}} <span>†††</span>
+                {{ projName }} <span>†††</span>
+                {{ projName }} <span>†††</span>
+                {{projName}} <span>†††</span>
+                {{ projName }} <span>†††</span>
+                {{ projName }} <span>†††</span>
               </h2>
             </marquee>
           </div>

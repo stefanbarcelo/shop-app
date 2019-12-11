@@ -1,0 +1,94 @@
+.contactSection {
+  display: grid;
+  width: 100%;
+  align-items: center;
+}
+.contactSectionGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 24px;
+  margin-bottom: 10vh;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+
+  h1 {
+    color: $ice;
+    font-size: 5vw;
+    line-height: 1.4;
+
+    .rose {
+      color: $dirtyRose;
+    }
+
+    @include breakpoint(mobile) {
+      grid-column: span 2;
+      font-size: 11vw;
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    color: $ice;
+    font-size: 14px;
+    line-height: 1.6;
+    @include breakpoint(mobile) {
+      font-size: 11px;
+    }
+  }
+
+  .bioText {
+    font-weight: 500;
+  }
+
+  .jobDescription {
+    color: $dirtyRose;
+    opacity: 0.8;
+  }
+}
+
+.easterEgg {
+  display: grid;
+  grid-template-columns: 120px 60px 120px;
+  grid-gap: 14px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5vh;
+  transition: all 0.4s ease-in-out;
+  opacity: 0.2;
+  cursor: pointer;
+
+  div > img {
+    max-width: 60px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  h4 {
+    color: $ice;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: "respira", sans-serif;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @include breakpoint(mobile) {
+    grid-template-columns: 90px 50px 90px;
+    div > img {
+      max-width: 40px;
+    }
+
+    h4 {
+      margin-top: 15px;
+      font-size: 11px;
+    }
+  }
+}

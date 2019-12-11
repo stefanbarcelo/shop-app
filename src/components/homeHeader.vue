@@ -3,8 +3,7 @@
     <div class="headerText">
       <h4>Hello, I'm Stefan Barcelo</h4>
       <h2>
-        a UI/UX Designer and Junior Front-end Developer who’s seeks to always
-        challenge himself and deliver only the best for his clients.
+        A UI/UX Designer and Front-End Developer who’s always seeking to challenge himself and only wants to deliver the best for his clients.
       </h2>
       <div class="btn">
         <div class="arrow"></div>
