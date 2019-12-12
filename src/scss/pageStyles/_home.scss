@@ -149,106 +149,6 @@
     @include breakpoint(mobile) {
       grid-template-columns: 1fr;
     }
-
-    :nth-child(1) {
-      margin-top: 0;
-      grid-column: 1 / span 5;
-    
-      .box {
-        height: 70vh;
-        background: #6a8a8db9;
-      }
-
-      @include breakpoint(mobile) {
-        margin-top: 0;
-        margin-bottom: 4rem;
-        grid-column: span 1;
-    
-        .box {
-          height: 35vh !important;
-        }
-      }
-    }
-    
-    :nth-child(2) {
-      margin-top: 6vh;
-      grid-column: 7 / span 6;
-    
-      .box {
-        height: 55vh;
-        background: $dirtyRose;
-      }
-
-      @include breakpoint(mobile) {
-        margin-top: 0;
-        margin-bottom: 4rem;
-        grid-column: span 1;
-    
-        .box {
-          height: 35vh !important;
-        }
-      }
-    }
-    
-    :nth-child(3) {
-      margin-top: 10vh;
-      grid-column: 3 / span 9;
-    
-      .box {
-        height: 65vh;
-        background: #57423c;
-      }
-
-      @include breakpoint(mobile) {
-        margin-top: 0;
-        margin-bottom: 4rem;
-        grid-column: span 1;
-    
-        .box {
-          height: 35vh !important;
-        }
-      }
-    }
-    
-    :nth-child(4) {
-      margin-top: 20vh;
-      grid-column: 1 / span 6;
-    
-      .box {
-        height: 55vh;
-        background: #374158;
-      }
-
-      @include breakpoint(mobile) {
-        margin-top: 0;
-        margin-bottom: 4rem;
-        grid-column: span 1;
-    
-        .box {
-          height: 35vh !important;
-        }
-      }
-    }
-    
-    :nth-child(5) {
-      margin-top: 10vh;
-      grid-column: 8 / span 5;
-    
-      .box {
-        height: 70vh;
-        background: #374158;
-      }
-
-      @include breakpoint(mobile) {
-        margin-top: 0;
-        margin-bottom: 4rem;
-        grid-column: span 1;
-    
-        .box {
-          height: 35vh !important;
-        }
-      }
-    }
   }
 }
 
@@ -262,8 +162,8 @@
 
   @include breakpoint(mobile) {
     grid-template-columns: auto 100px auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     svg {
       width: 70px;
     }

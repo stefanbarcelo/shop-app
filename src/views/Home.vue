@@ -6,32 +6,32 @@
       <GeminiBanner />
       <div class="homeGrid">
         <projectBlock
-          class="projectBlock1"
+          class="block1"
           projName="gaggan"
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "
         />
         <projectBlock
-          class="projectBlock2"
+          class="block2"
           projName="nordstrom"
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "
         />
         <projectBlock
-          class="projectBlock3"
+          class="block3"
           projName="Trueframe"
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "
         />
 
         <projectBlock
-          class="projectBlock4"
+          class="block4"
           projName="gallery"
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "
         />
         <projectBlock
-          class="projectBlock5"
+          class="block5"
           projName="contact"
           projDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 			tempor  incididunt ut labore  et dolore magna aliqua. "

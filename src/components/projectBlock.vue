@@ -9,21 +9,10 @@
           <img src="assets/images/ProjectPhoto.png" alt="" />
         </div>
         <div class="details">
-          <div class="content">
-            <marquee behavior="scroll" direction="right" scrollamount="25">
-              <h2>
-                {{ projName }} <span>†††</span>
-                {{projName }} <span>†††</span>
-                {{ projName }} <span>†††</span>
-                {{ projName }} <span>†††</span>
-                {{projName}} <span>†††</span>
-                {{ projName }} <span>†††</span>
-                {{ projName }} <span>†††</span>
-                {{projName}} <span>†††</span>
-                {{ projName }} <span>†††</span>
-                {{ projName }} <span>†††</span>
-              </h2>
-            </marquee>
+          <div class="projectBlock-marquee">
+            <h2>
+              {{ projName }}
+            </h2>
           </div>
         </div>
       </div>
@@ -40,7 +29,7 @@ export default {
   name: "projectBlock",
   props: {
     projName: String,
-    projDescription: String,
+    projDescription: String
   }
 };
 </script>

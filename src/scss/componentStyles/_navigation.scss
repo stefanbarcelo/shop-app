@@ -7,11 +7,15 @@ nav {
 
 .innerNav {
   max-width: 1640px;
-  padding: 16px;
+  padding: 16px 2em;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+
+  @include breakpoint(mobile) {
+    padding: 16px;
+  }
 
   .logo {
     text-decoration: none;
@@ -52,4 +56,17 @@ nav {
       cursor: pointer;
     }
   }
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dirtyRose;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0);
 }
