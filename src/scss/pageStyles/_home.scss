@@ -54,7 +54,7 @@
         width: 100%;
 
         h2 {
-          font-size: 32px;
+          font-size: 28px;
         }
 
         h4 {
@@ -145,7 +145,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 4px;
-    
+
     @include breakpoint(mobile) {
       grid-template-columns: 1fr;
     }
@@ -170,7 +170,7 @@
   }
 
   .line {
-    height: 2px;
+    height: 1px;
     width: 100%;
     background: $ice;
   }
@@ -182,6 +182,7 @@
   @include breakpoint(tablet) {
     grid-template-columns: auto 15vw auto;
     margin-bottom: 50px;
+    margin-top: 50px;
     svg {
       width: 10vw;
     }
@@ -189,9 +190,50 @@
 
   @include breakpoint(mobile) {
     grid-template-columns: auto 100px auto;
-    margin-bottom: 50px;
     svg {
       width: 70px;
     }
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.geminiSynmbol {
+  svg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#geminiCircle {
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  transform-origin: 50% 50%;
+  // -webkit-animation: rotating 6s linear infinite;
+  // -moz-animation: rotating 6s linear infinite;
+  // -ms-animation: rotating 6s linear infinite;
+  // -o-animation: rotating 6s linear infinite;
+  // animation: rotating 6s linear infinite;
+
+  path {
+    fill: $ice;
   }
 }

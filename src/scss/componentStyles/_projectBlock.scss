@@ -48,8 +48,8 @@
           font-weight: 700;
           -webkit-transform: translateX(0) translateZ(0);
           transform: translateX(0) translateZ(0);
-          -webkit-animation: marquee 4s linear infinite;
-          animation: marquee 4s linear infinite;
+          -webkit-animation: marquee 8s linear infinite;
+          animation: marquee 8s linear infinite;
 
           @include breakpoint(mobile) {
             font-size: 14vw;
